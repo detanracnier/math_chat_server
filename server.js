@@ -10,7 +10,7 @@ server.listen(PORT, function () {
 
 const io = require("socket.io")(server, {
     cors: {
-      origin: "http://localhost:3000",
+      origin: "https://detanracnier.github.io",
       methods: ["GET", "POST"],
       credentials: true
     }
