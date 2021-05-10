@@ -20,6 +20,7 @@ const io = require("socket.io")(server, {
 let equations = [];
 
 io.on("connection", socket => {
+  console.log("connection made");
   socket.on("calculate", (equation) => {
     equations.push(equation);
     console.log(equations.length,"adding:",equation);
